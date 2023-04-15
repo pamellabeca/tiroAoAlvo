@@ -21,4 +21,10 @@
     function limpaTela(){
         pincel.clearRect(0, 0, 1520, 655);
     }
+
+    function desenhaAlvo(x, y){
+        desenhaCirculo(x, y, raio+20, "red");
+        desenhaCirculo(x, y, raio+10, "white");
+        desenhaCirculo(x, y, raio, "red");
+    }
 </script>

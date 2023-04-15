@@ -9,4 +9,12 @@
     pincel.fillStyle = "white";
     pincel.fillRect(0, 0, 1520, 655);
     
+    var raio = 10;
+    
+    function desenhaCirculo(x, y, raio, cor){
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
 </script>
